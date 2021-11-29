@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1B2029;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    max-width: 400px;
+    min-height: 30vh;
+    padding: 5em;
+    box-shadow: 5px 5px 15px rgba(10, 219, 242, 0.2);
+    border-radius: 6px;
+
+}
+
+main h2 {
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 2em;
+    position: relative;
+    text-align: center;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    margin-top: 0em;
+    bottom: 0px;
+    padding: 4px;
+
+    left: 0;
+    border-radius: 6px;
+    background: rgba(97, 97, 97, 0.311);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+.input {
+    position: relative;
+
+
+}
+
+form .input:first-child {
+    margin-bottom: 1.0rem;
+
+}
+
+.input .underline::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+
+}
+
+.input .underline::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, #41295a, #2f0743);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+
+}
+
+.input input:focus~.underline::after {
+    transform: scaleX(1);
+
+}
+
+.input {
+    padding: 1rem;
+    outline: none;
+    font-size: 0.5em;
+    color: rgba(0, 0, 0, 0.7);
+
+
+}
+
+.input input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="email"] {
+    padding: 1em;
+    font-weight: 800;
+
+}
+
+form input[type="password"] {
+    padding: 1em;
+    font-weight: 800;
+}
+
+form input[type="submit"] {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0.4em;
+    background-color: #44a08d;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 300;
+    border-radius: 4px;
+
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background-color: #01915f;
+}
+
+form a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    border-radius: 4px;
+    background-color: #6a42abbd;
+    padding: 0.3em;
+    font-weight: 800;
+}
+
+form a:hover {
+    background-color: #6a42ab;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+
+}
+
+.footer span {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.footer .social {
+    padding: 0.4em;
+    border-radius: 6px;
+    font-size: 0.85em;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.footer .social a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer .social a i {
+    margin: 0 0.3rem;
+    width: 15px;
+
+}
+
+.footer .socialTwitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    border-radius: 4px;
+    padding: 0.6em;
+
+}
+
+.footer .socialFacebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    border-radius: 4px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.footer .socialInstagram {
+    background: linear-gradient(to right, #c11e21, #722052);
+    border-radius: 4px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
