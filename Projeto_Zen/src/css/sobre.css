@@ -1,0 +1,615 @@
+/*=========== Reset =========*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+body {
+    background-color: #767171;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*===Container===*/
+.container {
+    width: 100%;
+    float: left;
+    padding: 3%;
+    text-align: center;
+}
+
+/*===BG-Colors===*/
+.bg-gradient {
+    background: linear-gradient(to right, #C02C37, #E66A22);
+}
+
+/*=========== Cabeçalho =========*/
+
+
+.logo {
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+}
+
+.btn-menu {
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    border-radius: 56px;
+    cursor: pointer;
+}
+
+/*=========== menu =========*/
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+}
+
+.btn-close {
+    font-size: 2em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu li {
+    padding: 1.5%;
+}
+
+.menu li a {
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover {
+    border: 3px solid #f70d0d;
+    border-radius: 10px;
+}
+
+/*=========== Banner =========*/
+.banner {
+    background: url(../img/digital-globe.png) no-repeat fixed;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.buttons i {
+    float: right;
+}
+
+.title {
+    background-color: rgba(14, 12, 12, 0.699);
+    color: #fffefe;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.btn-sobre {
+    background-color: rgba(14, 12, 12, 0.699);
+    color: #fffefe;
+    margin-top: 2%;
+}
+
+.btn-curso {
+    background-color: rgba(176, 32, 32, 0.699);
+    color: #fffefe;
+}
+
+/*=========== Cursos =========*/
+.cursos {
+    width: 100%;
+    float: left;
+    padding: 2% 2%;
+}
+
+.curso {
+    width: 80%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px rgb(255, 129, 51);
+}
+
+.curso img {
+    border-radius: 7px 7px 0 0;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.inner {
+    padding: 10%;
+}
+
+.inner a {
+    background-color: rgb(148, 150, 148);
+    ;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.inner a:hover {
+    background-color: rgba(74, 49, 199, 0.619);
+    color: #ffffff
+}
+
+.inner h4 {
+    font-size: 1.2em;
+    color: 130400;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.inner p {
+    margin-top: 6%;
+    color: 130400;
+    line-height: 1.5em;
+}
+
+/*RODAPÉ*/
+
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 2%;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 2%;
+    color: white;
+}
+
+/*Botão Subir*/
+.btnS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    width: 30px;
+    height: 40px;
+    background: linear-gradient(to right, #C02C37, #E66A22);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btnS::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition: margin-top 250ms;
+}
+
+
+/*Media Types*/
+
+@media screen and (min-width:280px) {
+    .logo {
+        text-align: left;
+        font-size: 1.5em;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.5em;
+        text-align: left;
+        cursor: pointer;
+        padding: 2%;
+        border-radius: 10px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .banner h3 {
+        font-size: 1.0em;
+        color: #fff;
+    }
+
+}
+
+@media screen and (min-width:400px) {
+    .logo {
+        text-align: left;
+        font-size: 2.5em;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+    }
+
+    .banner h2 {
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .banner h3 {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.5em;
+        text-align: left;
+        cursor: pointer;
+        padding: 5%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width:500px) {
+    .curso {
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+        border-radius: 7px;
+        margin-bottom: 2%;
+    }
+
+    .curso img {
+        border-radius: 7px 7px 0 0;
+        padding-top: 3%;
+        padding-left: 5%;
+    }
+
+    .logo {
+        text-align: left;
+        font-size: 2.5em;
+        width: 100%;
+        height: 80px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 2.0em;
+        text-align: left;
+        cursor: pointer;
+        padding: 3%;
+        border-radius: 10px;
+    }
+
+    .inner a {
+        font-size: 2.0em;
+        color: #130400;
+        font-weight: 700;
+    }
+
+    .inner h4 {
+        font-size: 1.8em;
+        color: 130400;
+        margin-top: 2%;
+    }
+
+    .inner p {
+        font-size: 1.2em;
+        margin-top: 4%;
+        color: 130400;
+        line-height: 1.5em;
+    }
+
+    .social-icons a {
+        font-size: 1.8em;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 2%;
+    }
+
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons a:hover {
+        color: white;
+    }
+
+    .copyright {
+        font-size: 1.2em;
+        margin-top: 2%;
+        color: white;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .logo {
+        text-align: left;
+        font-size: 3.5em;
+        width: 100%;
+        height: 120px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 2.0em;
+        text-align: left;
+        cursor: pointer;
+        padding: 3%;
+        border-radius: 10px;
+    }
+
+    .inner a {
+        font-size: 2.4em;
+        color: #130400;
+        font-weight: 700;
+    }
+
+    .inner h4 {
+        font-size: 2.0em;
+        color: 130400;
+        margin-top: 2%;
+    }
+
+    .inner p {
+        font-size: 1.9em;
+        margin-top: 4%;
+        color: 130400;
+        line-height: 1.5em;
+    }
+
+    .social-icons a {
+        font-size: 2.5em;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 2%;
+    }
+
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons a:hover {
+        color: white;
+    }
+
+    .copyright {
+        font-size: 1.6em;
+        margin-top: 2%;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .logo {
+        text-align: left;
+        font-size: 3.5em;
+        width: 100%;
+        height: 120px;
+        border-radius: 10px;
+        padding: 2%;
+        color: white;
+    }
+
+    .btn {
+        width: 70%;
+        font-size: 2.3em;
+        text-align: left;
+        cursor: pointer;
+        padding: 3%;
+        border-radius: 10px;
+        float: left;
+    }
+
+    .banner {
+        width: 100%;
+        float: right;
+        padding: 3%;
+    }
+
+    .banner h2 {
+        font-size: 2.0em;
+        color: #fff;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .banner h3 {
+        background-color: rgba(14, 12, 12, 0.699);
+        color: #fffefe;
+        border-radius: 10px;
+        font-size: 1.3em;
+        color: #fff;
+        margin-top: 2px;
+    }
+
+    .inner a {
+        font-size: 2.5em;
+        color: #130400;
+        font-weight: 700;
+    }
+
+    .inner h4 {
+        font-size: 2.0em;
+        color: 130400;
+        margin-top: 2%;
+    }
+
+    .inner p {
+        font-size: 1.0em;
+        margin-top: 4%;
+        color: 130400;
+        line-height: 1.5em;
+    }
+
+    .social-icons a {
+        font-size: 3.0em;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 2%;
+    }
+
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons a:hover {
+        color: white;
+    }
+
+    .copyright {
+        font-size: 1.7em;
+        margin-top: 2%;
+        color: white;
+    }
+
+    .curso {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (min-width:800px) {
+    .btn-menu {
+        display: none;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #636873;
+        display: block !important;
+        position: static;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    .menu li {
+        padding: 0;
+        float: left;
+    }
+
+    .menu li a {
+        color: #ffffff;
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .menu li a:hover {
+        border-radius: 10px;
+        color: #ffffff;
+        background-color: #C02C37;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .banner {
+        background: url(../img/digital-globe.png) no-repeat fixed;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .banner h2 {
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .banner h3 {
+        font-size: 1.0em;
+        color: #fff;
+        padding: 1%;
+    }
+
+    .title {
+        background-color: rgba(14, 12, 12, 0.699);
+        color: #fffefe;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+}

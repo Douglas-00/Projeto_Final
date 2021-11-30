@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+
+    <link rel="shortcut icon" type="image" href="../img/livrosShortcutIcon.png">
+</head>
+<script>
+    function click() {
+        alert("Cadastrado com Sucesso");
+    }
+</script>
+
+<body>
+    <main>
+
+        <h1>Cadastre-se</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="../img/googleLogo.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="../img/facebookLogo.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="../img/linkedingLogo.png" alt="google">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OR</span>
+        </div>
+        <form action="src/Cadastro.html" name="cad" method="POST">
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="nome1" placeholder="Digite seu Nome" name="nome" required>
+            </label>
+
+            <label for="celular">
+                <span>Celular</span>
+                <input type="text" id="celular1" placeholder="Digite seu N° Telefone" name="celular" maxlength=11
+                    minlength=11 required>
+            </label>
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email1" placeholder="Digite seu Email" name="email" required>
+            </label>
+
+            <label for="password">
+                <span>Senha</span>
+                <input type="password" id="senha" placeholder="Digite sua Senha" name="senha"
+                    title="A senha deve conter Mínimo de oito caracteres" required>
+            </label>
+
+            <button type="submit" value="Cadastrar" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">
+                Cadastrar
+            </button>
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Meus Parabéns</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Cadastro Realizado com Sucesso!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="click" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                        <a href="./index.html"><button type="button" class="btn btn-primary">Login</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="./index.html"><button type="button">Voltar</button></a>
+        </div>
+
+    </main>
+    <section class="images">
+        <img src="./img/mobile.png" alt="MobileSmartPhone">
+        <div class="circle">
+
+        </div>
+    </section>
+
+</body>
+
+</html>

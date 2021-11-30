@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/sobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fruktur&family=Lato:ital,wght@0,300;1,300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+
+    <header class="cabecalho container">
+
+        <button class="btn-menu bg-gradient"><i class="fas fa-bars "></i></button>
+        <a href="Main.html">
+            <h1 class="logo bg-gradient">Dev Run </h1>
+        </a>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="./Main.html">Home</a></li>
+                <li><a href="./Cursos.html">Cursos</a></li>
+                <li><a href="./Sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner container">
+        <div class="title">
+            <h2>Olá Vamos te Apresentar a<br> Dev Run!!</h2>
+            <h3>Somos uma empresa atuante na área da Tecnologia da Informação,
+                nós preparamos você para o sucesso por meio de nossos cursos profissionalizantes,
+                voltados para o mundo do desenvolvimento.
+                Nosso foco é entregar material de valor, um curso expoente no quesito qualidade,
+                excelência, metodologia ágil, e etc. </h3>
+        </div>
+
+        <div class="buttons">
+            <a href="./Cursos.html"><button class=" btn btn-curso">Cursos <i
+                        class="fa fa-arrow-circle-right"></i></button></a>
+            <a href="./Main.html"><button class=" btn btn-sobre">Home <i class="fa fa-question-circle"></i></button></a>
+
+        </div>
+    </div>
+
+    <main class="cursos container">
+        <article class="curso">
+            <a href="#"><img src="../img/principal.png" alt="Curso Angular"></a>
+            <div class="inner">
+                <a href="#">Tecnologia</a>
+                <h4>Como Praticar ?</h4>
+                <p>Para evoluir na área é preciso muito estudo e acima de tudo, persistência e repetição!
+                    O que queremos dizer com isso? É necessário realizar uma grande quantidade de exercícios,
+                    para desenvolver raciocínio lógico e fixar bem a sintaxe da linguagem.
+
+                </p>
+            </div>
+        </article>
+        <article class="curso">
+            <a href="#"><img src="../img/programer.png" alt="Curso Java"></a>
+            <div class="inner">
+                <a href="#">O que é Tecnologia ?</a>
+                <h4>Tecnologia</h4>
+                <p>Para você, o que é de fato a tecnologia ?<br>
+                    Para quem trabalha com computadores e todas as novidades desse universo (como nós, do Tecmundo, por
+                    exemplo), a tecnologia envolve o desenvolvimento de aparelhos que lidam com a distribuição da
+                    informação de forma cada vez mais veloz, abrangendo um número crescente de pessoas e realizando
+                    cálculos cada vez mais avançados.
+
+                    Contudo, se você falar com um biólogo, por exemplo,
+                    ele poderá lhe dizer que a tecnologia envolve a criação de ferramentas que facilitem o estudo das
+                    células, bem como das evoluções animal e vegetal. Já um arqueólogo pode falar sobre o
+                    desenvolvimento das ferramentas que permitem o estudo de elementos históricos. A lista de exemplos
+                    pode seguir
+                    adiante e englobar as mais diversas áreas de desenvolvimento humano.
+                </p>
+            </div>
+        </article>
+        <article class="curso">
+            <a href="#"><img src="../img/web.png" alt="Curso Javascript"></a>
+            <div class="inner">
+                <a href="#">Como trabalhar ?</a>
+                <h4>Programador</h4>
+                <p>O programador é o profissional que cria,
+                    desenvolve e mantém diferentes tipos de softwares em sistemas
+                    amplos ou para uso em computadores pessoais. Ele usa linguagens de programação, como html, java,
+                    c++, para criar comandos em programas,
+                    criando novas funcionalidades e utilidades.
+                </p>
+            </div>
+        </article>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer class="rodape container bg-gradient">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div>
+            <a href="#" class="btnS"></a>
+        </div>
+        <p class="copyright">
+            Copyright @ Dev-Run 2021. Todos os direitos reservados.<br>
+            Projeto Uninove Desenvolvido por Alunos Uninove
+
+        </p>
+
+    </footer>
+
+    <!--Jquery-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(".btn-menu").click(function () {
+            $(".menu").fadeIn(500);
+        });
+        $(".btn-close").click(function () {
+            $(".menu").fadeOut(200)
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
